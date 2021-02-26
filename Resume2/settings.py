@@ -25,7 +25,7 @@ SECRET_KEY = 'b14co7kw-t#kdngekuv@+ezp@%d-&%ub$t!nv=%95&=u%ym!ma'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aminsaberi.herokuapp.com', '127.0.0.1']
 
 # Application definition
 

@@ -8,6 +8,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.All, name='index'),
+    url(r'^fa$', views.All, name='fa-index'),
     url(r'^sent$', views.sent, name='sent'),
     url(r'^', include('blog.urls')),
     # url(r'^', include('contact_page.urls')),
