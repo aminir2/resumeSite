@@ -6,7 +6,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.All, name='index'),
-    url(r'^sent$', views.sent, name='sent'),
-
+    # url(r'^post/<postID>/<title>/$', views.Post.as_view(), name='post')
+    path('fa/post/<postID>/<title>', views.Post.as_view())
 ]

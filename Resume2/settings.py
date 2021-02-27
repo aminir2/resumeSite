@@ -42,7 +42,14 @@ INSTALLED_APPS = [
     'skills',
     'blog',
     'django_social_share',
-    'contact'
+    'contact',
+    'fa_about_me',
+    'fa_skills',
+    'fa_blog',
+    'fa_contact',
+    'fa_info',
+    'sent',
+    'fa_sent',
 ]
 
 MIDDLEWARE = [

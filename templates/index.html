@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="fa" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,14 +28,14 @@
 <div class="lm-animated-bg" style="background-image: url({% static 'img/main_bg.png' %});"></div>
 <!-- /Animated Background -->
 
-{#    <!-- Loading animation -->#}
-{#    <div class="preloader">#}
-{#      <div class="preloader-animation">#}
-{#        <div class="preloader-spinner">#}
-{#        </div>#}
-{#      </div>#}
-{#    </div>#}
-{#    <!-- /Loading animation -->#}
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
 
 <div class="page">
     <div class="page-content">
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <ul class="main-menu fa-pull-right">
+            <ul class="main-menu">
                 <li class="active">
                     <a href="#home" class="nav-anim">
                         <span class="menu-icon lnr lnr-home"></span>
@@ -70,12 +70,6 @@
                         <span class="link-text">Resume</span>
                     </a>
                 </li>
-                {#                <li>#}
-                {#                    <a href="#portfolio" class="nav-anim">#}
-                {#                        <span class="menu-icon lnr lnr-briefcase"></span>#}
-                {#                        <span class="link-text">Portfolio</span>#}
-                {#                    </a>#}
-                {#                </li>#}
                 <li>
                     <a href="#blog" class="nav-anim">
                         <span class="menu-icon lnr lnr-book"></span>
@@ -88,7 +82,9 @@
                         <span class="link-text">Contact</span>
                     </a>
                 </li>
+
             </ul>
+
 
             <div class="social-links">
                 <ul>
@@ -98,11 +94,13 @@
                     <li><a href="{{ setting_data.telegram }}" target="_blank"><i class="fab fa-telegram"></i></a></li>
                 </ul>
             </div>
-
-            <div class="header-buttons">
+            <div>
+                <a href="/fa" target="_blank" class="btn btn-primary">Change Site Language to Persian</a>
+            </div>
+            <div>
                 <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
             </div>
-            <div class="clearfix"></div>
+
             <div class="copyrights">{{ setting_data.copyright }}</div>
         </header>
 
