@@ -87,8 +87,8 @@
                 </ul>
             </div>
 
-            <div class="header-buttons">
-                <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+            <div>
+                <a href="/fa" target="_blank" class="btn btn-primary">Change Site Language to Persian</a>
             </div>
 
         </header>
@@ -149,27 +149,30 @@
 
                             <!-- Share Buttons -->
                             <div class="entry-share btn-group share-buttons">
-                                <a href="https://www.facebook.com/sharer.php?u={{ setting_data.site_address }}{{ posts.get_absolute_url }}"
+                                <a href="https://www.facebook.com/sharer.php?u=
+                                        {{ setting_data.site_address }}{{ posts.get_absolute_url }}"
                                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
                                    class="btn" target="_blank" title="Share on Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://twitter.com/intent/tweet?url={{ setting_data.site_address }}{{ posts.get_absolute_url }}&text={{ posts.title }}"
+                                <a href="https://twitter.com/intent/tweet?url=
+                                        {{ setting_data.site_address }}{{ posts.get_absolute_url }}&text={{ posts.title }}"
                                    onclick="javascript:window.open(this.href, 'https://twitter.com', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
                                    class="btn" target="_blank" title="Share on Twitter">
                                     <i class="fab fa-twitter"></i>
                                 </a>
 
-                                <a href="https://telegram.me/share/url?url={{ setting_data.site_address }}{{ posts.get_absolute_url }}"
+                                <a href="https://telegram.me/share/url?url=
+                                        {{ setting_data.site_address }}{{ posts.get_absolute_url }}"
                                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
                                    class="btn" target="_blank" title="Share on Telegram">
                                     <i class="fab fa-telegram"></i>
                                 </a>
-{#                                <a href="{{ setting_data.git }}"#}
-{#                                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#                                   class="btn" target="_blank" title="Share on GitHub">#}
-{#                                    <i class="fab fa-github"></i>#}
-{#                                </a>#}
+                                {#                                <a href="{{ setting_data.git }}"#}
+                                {#                                   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
+                                {#                                   class="btn" target="_blank" title="Share on GitHub">#}
+                                {#                                    <i class="fab fa-github"></i>#}
+                                {#                                </a>#}
                             </div>
                             <!-- /Share Buttons -->
                         </div>

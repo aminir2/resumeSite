@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 from .models import *
-from index_page.models import *
+from fa_info.models import *
 
 
 class Post(TemplateView):
