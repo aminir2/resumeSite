@@ -10,8 +10,6 @@
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio"/>
     <meta name="author" content="lmpixels"/>
     <link rel="shortcut icon" href="favicon.ico">
-
-
     <link rel="stylesheet" href="{% static 'css/reset.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/animations.css' %}" type="text/css">
@@ -19,15 +17,12 @@
     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
-
     <script src="{% static 'js/modernizr.custom.js' %}"></script>
 </head>
-
 <body>
 <!-- Animated Background -->
 <div class="lm-animated-bg" style="background-image: url({% static 'img/main_bg.png' %});"></div>
 <!-- /Animated Background -->
-
     <!-- Loading animation -->
     <div class="preloader">
       <div class="preloader-animation">
@@ -36,10 +31,8 @@
       </div>
     </div>
     <!-- /Loading animation -->
-
 <div class="page">
     <div class="page-content">
-
         <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
                 <div class="header-photo">
@@ -50,7 +43,6 @@
                     <h4>{{ setting_data.job }}</h4>
                 </div>
             </div>
-
             <ul class="main-menu">
                 <li class="active">
                     <a href="#home" class="nav-anim">
@@ -83,7 +75,6 @@
                     </a>
                 </li>
             </ul>
-
             <div class="social-links">
                 <ul>
                     <li><a href="{{ setting_data.git }}" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -95,13 +86,8 @@
             <div>
                 <a href="/" target="_blank" class="btn btn-primary">تغییر زبان سایت به انگلیسی</a>
             </div>
-{#            <div>#}
-{#                <a href="#" target="_blank" class="btn btn-primary">دانلود رزومه</a>#}
-{#            </div>#}
-
             <div class="copyrights">{{ setting_data.copyright }}</div>
         </header>
-
         <!-- Mobile Navigation -->
         <div class="menu-toggle">
             <span></span>
@@ -109,14 +95,12 @@
             <span></span>
         </div>
         <!-- End Mobile Navigation -->
-
         <!-- Arrows Nav -->
         <div class="lmpixels-arrows-nav">
             <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
             <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
         </div>
         <!-- End Arrows Nav -->
-
         <div class="content-area">
             <div class="animated-sections">
                 <!-- Home Subpage -->
@@ -143,7 +127,6 @@
                     </div>
                 </section>
                 <!-- End of Home Subpage -->
-
                 <!-- About Me Subpage -->
                 <section data-id="about-me" class="animated-section" dir="rtl">
                     <div dir="rtl">
@@ -157,7 +140,6 @@
                             <div class="col-xs-12 col-sm-7">
                                 <p>{{ about.About_me|safe }}</p>
                             </div>
-
                             <div class="col-xs-12 col-sm-5">
                                 <div class="info-list" dir="rtl">
                                     <ul>
@@ -165,22 +147,18 @@
                                             <span class="title">سن</span>
                                             <span class="value">{{ about.age }}</span>
                                         </li>
-
                                         <li>
                                             <span class="title">محل اقامت</span>
                                             <span class="value">{{ about.residence }}</span>
                                         </li>
-
                                         <li>
                                             <span class="title">آدرس</span>
                                             <span class="value">{{ about.address }}</span>
                                         </li>
-
                                         <li>
                                             <span class="title">ایمیل</span>
                                             <span class="value">{{ about.email }}</span>
                                         </li>
-
                                         <li>
                                             <span class="title">تلفن همراه</span>
                                             <span class="value">{{ about.phone }}</span>
@@ -190,9 +168,7 @@
                             </div>
                         </div>
                         <!-- End of Personal Information -->
-
                         <div class="white-space-50"></div>
-
                         <!-- Services -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12">
@@ -201,7 +177,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="col-inner">
@@ -217,21 +192,9 @@
                                                 </div>
                                             </div>
                                         {% endfor %}
-                                        {#                                        <div class="info-block-w-icon">#}
-                                        {#                                            <div class="ci-icon">#}
-                                        {#                                                <i class="lnr lnr-laptop-phone"></i>#}
-                                        {#                                            </div>#}
-                                        {#                                            <div class="ci-text">#}
-                                        {#                                                <h4>Web Design</h4>#}
-                                        {#                                                <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio#}
-                                        {#                                                    tortor bibendum massa, sit amet ultricies ex lectus scelerisque#}
-                                        {#                                                    nibh. Ut non sodales.</p>#}
-                                        {#                                            </div>#}
-                                        {#                                        </div>#}
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-xs-12 col-sm-6">
                                 <div class="col-inner">
                                     <div class="info-list-w-icon">
@@ -246,274 +209,14 @@
                                                 </div>
                                             </div>
                                         {% endfor %}
-                                        {#                                        <div class="info-block-w-icon">#}
-                                        {#                                            <div class="ci-icon">#}
-                                        {#                                                <i class="lnr lnr-flag"></i>#}
-                                        {#                                            </div>#}
-                                        {#                                            <div class="ci-text">#}
-                                        {#                                                <h4>Management</h4>#}
-                                        {#                                                <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio#}
-                                        {#                                                    tortor bibendum massa, sit amet ultricies ex lectus scelerisque#}
-                                        {#                                                    nibh. Ut non sodales.</p>#}
-                                        {#                                            </div>#}
-                                        {#                                        </div>#}
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- End of Services -->
-
-                        {#                        <div class="white-space-30"></div>#}
-
-                        {#                        <!-- Testimonials -->#}
-                        {#                        <div class="row">#}
-                        {#                            <div class="col-xs-12 col-sm-12">#}
-                        {#                                <div class="block-title">#}
-                        {#                                    <h3>Testimonials</h3>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {##}
-                        {#                        <div class="row">#}
-                        {#                            <div class="col-xs-12 col-sm-12">#}
-                        {#                                <div class="testimonials owl-carousel">#}
-                        {#                                    <!-- Testimonial 1 -->#}
-                        {#                                    <div class="testimonial">#}
-                        {#                                        <div class="img">#}
-                        {#                                            <img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith">#}
-                        {#                                        </div>#}
-                        {#                                        <div class="text">#}
-                        {#                                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.#}
-                        {#                                                Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id#}
-                        {#                                                ligula pellentesque, at vehicula dui ultrices.</p>#}
-                        {#                                        </div>#}
-                        {##}
-                        {#                                        <div class="author-info">#}
-                        {#                                            <h4 class="author">Julia Hickman</h4>#}
-                        {#                                            <h5 class="company">Omni Source</h5>#}
-                        {#                                            <div class="icon">#}
-                        {#                                                <i class="fas fa-quote-right"></i>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                    </div>#}
-                        {#                                    <!-- End of Testimonial 1 -->#}
-                        {##}
-                        {#                                    <!-- Testimonial 2 -->#}
-                        {#                                    <div class="testimonial">#}
-                        {#                                        <div class="img">#}
-                        {#                                            <img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">#}
-                        {#                                        </div>#}
-                        {#                                        <div class="text">#}
-                        {#                                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.#}
-                        {#                                                Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id#}
-                        {#                                                ligula pellentesque, at vehicula dui ultrices.</p>#}
-                        {#                                        </div>#}
-                        {##}
-                        {#                                        <div class="author-info">#}
-                        {#                                            <h4 class="author">Robert Watkins</h4>#}
-                        {#                                            <h5 class="company">Endicott Shoes</h5>#}
-                        {#                                            <div class="icon">#}
-                        {#                                                <i class="fas fa-quote-right"></i>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                    </div>#}
-                        {#                                    <!-- End of Testimonial 2 -->#}
-                        {##}
-                        {#                                    <!-- Testimonial 3 -->#}
-                        {#                                    <div class="testimonial">#}
-                        {#                                        <div class="img">#}
-                        {#                                            <img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">#}
-                        {#                                        </div>#}
-                        {#                                        <div class="text">#}
-                        {#                                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor.#}
-                        {#                                                Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id#}
-                        {#                                                ligula pellentesque, at vehicula dui ultrices.</p>#}
-                        {#                                        </div>#}
-                        {##}
-                        {#                                        <div class="author-info">#}
-                        {#                                            <h4 class="author">Kristin Carroll</h4>#}
-                        {#                                            <h5 class="company">Helping Hand</h5>#}
-                        {#                                            <div class="icon">#}
-                        {#                                                <i class="fas fa-quote-right"></i>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                    </div>#}
-                        {#                                    <!-- End of Testimonial 3 -->#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {#                        <!-- End of Testimonials -->#}
-                        {##}
-                        {#                        <div class="white-space-50"></div>#}
-                        {##}
-                        {#                        <!-- Clients -->#}
-                        {#                        <div class="row">#}
-                        {#                            <div class="col-xs-12 col-sm-12">#}
-                        {#                                <div class="block-title">#}
-                        {#                                    <h3>Cilents</h3>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {##}
-                        {#                        <div class="row">#}
-                        {#                            <div class="col-xs-12 col-sm-12">#}
-                        {#                                <div class="clients owl-carousel">#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-1.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-2.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-3.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-4.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-5.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-6.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="client-block">#}
-                        {#                                        <a href="#" target="_blank" title="Logo">#}
-                        {#                                            <img src="img/clients/client-7.png" alt="Logo">#}
-                        {#                                        </a>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {#                        <!-- End of Clients -->#}
-
-                        {#                        <div class="white-space-50"></div>#}
-                        {##}
-                        {#                        <!-- Pricing -->#}
-                        {#                        <div class="row">#}
-                        {#                            <div class="col-xs-12 col-sm-12">#}
-                        {##}
-                        {#                                <div class="block-title">#}
-                        {#                                    <h3>Pricing</h3>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {##}
-                        {#                        <div class="row">#}
-                        {#                            <div class=" col-xs-12 col-sm-12 ">#}
-                        {#                                <div class="fw-pricing clearfix row">#}
-                        {##}
-                        {#                                    <div class="fw-package-wrap col-md-6 ">#}
-                        {#                                        <div class="fw-package">#}
-                        {#                                            <div class="fw-heading-row">#}
-                        {#                                                <span>Silver</span>#}
-                        {#                                            </div>#}
-                        {##}
-                        {#                                            <div class="fw-pricing-row">#}
-                        {#                                                <span>$64</span>#}
-                        {#                                                <small>per month</small>#}
-                        {#                                            </div>#}
-                        {##}
-                        {#                                            <div class="fw-button-row">#}
-                        {#                                                <a href="#" target="_self" class="btn btn-secondary">Free Trial</a>#}
-                        {#                                            </div>#}
-                        {##}
-                        {#                                            <div class="fw-default-row">Lorem ipsum dolor</div>#}
-                        {#                                            <div class="fw-default-row">Pellentesque scelerisque</div>#}
-                        {#                                            <div class="fw-default-row">Morbi eu sagittis</div>#}
-                        {#                                        </div>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                    <div class="fw-package-wrap col-md-6 highlight-col ">#}
-                        {#                                        <div class="fw-package">#}
-                        {#                                            <div class="fw-heading-row">#}
-                        {#                                                <span>Gold</span>#}
-                        {#                                            </div>#}
-                        {##}
-                        {#                                            <div class="fw-pricing-row">#}
-                        {#                                                <span>$128</span>#}
-                        {#                                                <small>per month</small>#}
-                        {#                                            </div>#}
-                        {##}
-                        {#                                            <div class="fw-button-row">#}
-                        {#                                                <a href="#" target="_self" class="btn btn-primary">Free Trial</a>#}
-                        {#                                            </div>#}
-                        {##}
-                        {#                                            <div class="fw-default-row">Lorem ipsum dolor</div>#}
-                        {#                                            <div class="fw-default-row">Pellentesque scelerisque</div>#}
-                        {#                                            <div class="fw-default-row">Morbi eu sagittis</div>#}
-                        {#                                            <div class="fw-default-row">Donec non diam</div>#}
-                        {#                                            <div class="fw-default-row"></div>#}
-                        {#                                        </div>#}
-                        {#                                    </div>#}
-                        {##}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {#                        <!-- End of Pricing -->#}
-{#                        <!-- Fun Facts -->#}
-{#                        <div class="row">#}
-{#                            <div class="col-xs-12 col-sm-12">#}
-{##}
-{#                                <div class="block-title">#}
-{#                                    <h3>حقایق <span>جالب</span></h3>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{##}
-{#                        <div class="row">#}
-{#                            <div class="col-xs-12 col-sm-4">#}
-{#                                <div class="fun-fact gray-default">#}
-{#                                    <i class="lnr lnr-heart"></i>#}
-{#                                    <h4>مشتریان راضی</h4>#}
-{#                                    <span class="fun-fact-block-value">578</span>#}
-{#                                    <span class="fun-fact-block-text"></span>#}
-{#                                </div>#}
-{#                            </div>#}
-{##}
-{#                            <div class="col-xs-12 col-sm-4">#}
-{#                                <div class="fun-fact gray-default">#}
-{#                                    <i class="lnr lnr-clock"></i>#}
-{#                                    <h4>کل ساعت کاری</h4>#}
-{#                                    <span class="fun-fact-block-value">4,780</span>#}
-{#                                    <span class="fun-fact-block-text"></span>#}
-{#                                </div>#}
-{#                            </div>#}
-{##}
-{#                            <div class="col-xs-12 col-sm-4 ">#}
-{#                                <div class="fun-fact gray-default">#}
-{#                                    <i class="lnr lnr-star"></i>#}
-{#                                    <h4>جوایز</h4>#}
-{#                                    <span class="fun-fact-block-value">15</span>#}
-{#                                    <span class="fun-fact-block-text"></span>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <!-- End of Fun Facts -->#}
-
                     </div>
                 </section>
                 <!-- End of About Me Subpage -->
-
                 <!-- Resume Subpage -->
                 <section data-id="resume" class="animated-section">
                     <div dir="rtl">
@@ -522,7 +225,6 @@
                         </div>
                     </div>
                     <div class="section-content">
-
                         <div class="row">
                             <div class="col-xs-12 col-sm-7">
                                 <div dir="rtl">
@@ -553,7 +255,6 @@
                                         </div>
                                     {% endfor %}
                                 </div>
-
                                 <div class="white-space-50"></div>
                                 <div dir="rtl">
                                     <div class="block-title">
@@ -576,18 +277,14 @@
                                     {% endfor %}
                                 </div>
                             </div>
-
                             <!-- Skills & Certificates -->
                             <div class="col-xs-12 col-sm-5">
                                 <!-- Design Skills -->
                                 <div dir="rtl">
                                     <div class="block-title">
-
                                         <h3><span>مهارت های </span>طراحی</h3>
-
                                     </div>
                                 </div>
-
                                 <div class="skills-info skills-second-style">
                                     {% for skill in design %}
                                         <!-- Skill 1 -->
@@ -601,12 +298,9 @@
                                         </div>
                                         <!-- End of Skill 1 -->
                                     {% endfor %}
-
                                 </div>
                                 <!-- End of Design Skills -->
-
                                 <div class="white-space-10"></div>
-
                                 <!-- Coding Skills -->
                                 <div dir="rtl">
                                     <div class="block-title">
@@ -626,12 +320,9 @@
                                         </div>
                                         <!-- End of Skill 5 -->
                                     {% endfor %}
-
                                 </div>
                                 <!-- End of Coding Skills -->
-
                                 <div class="white-space-10"></div>
-
                                 <!-- Knowledges -->
                                 <div dir="rtl">
                                     <div class="block-title">
@@ -650,130 +341,6 @@
                     </div>
                 </section>
                 <!-- End of Resume Subpage -->
-
-                {#                <!-- Portfolio Subpage -->#}
-                {#                <section data-id="portfolio" class="animated-section">#}
-                {#                    <div class="page-title">#}
-                {#                        <h2>Portfolio</h2>#}
-                {#                    </div>#}
-                {##}
-                {#                    <div class="section-content">#}
-                {##}
-                {#                        <div class="row">#}
-                {#                            <div class="col-xs-12 col-sm-12">#}
-                {#                                <!-- Portfolio Content -->#}
-                {#                                <div class="portfolio-content">#}
-                {##}
-                {#                                    <ul class="portfolio-filters">#}
-                {#                                        <li class="active">#}
-                {#                                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>#}
-                {#                                        </li>#}
-                {#                                        <li>#}
-                {#                                            <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>#}
-                {#                                        </li>#}
-                {#                                        <li>#}
-                {#                                            <a class="filter btn btn-sm btn-link"#}
-                {#                                               data-group="category_mockups">Mockups</a>#}
-                {#                                        </li>#}
-                {#                                        <li>#}
-                {#                                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>#}
-                {#                                        </li>#}
-                {#                                        <li>#}
-                {#                                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo#}
-                {#                                                Videos</a>#}
-                {#                                        </li>#}
-                {#                                        <li>#}
-                {#                                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube#}
-                {#                                                Videos</a>#}
-                {#                                        </li>#}
-                {#                                    </ul>#}
-                {##}
-                {#                                    <!-- Portfolio Grid -->#}
-                {#                                    <div class="portfolio-grid three-columns">#}
-                {##}
-                {#                                        <figure class="item lbaudio"#}
-                {#                                                data-groups='["category_all", "category_soundcloud"]'>#}
-                {#                                            <div class="portfolio-item-img">#}
-                {#                                                <img src="img/portfolio/1.jpg" alt="SoundCloud Audio" title=""/>#}
-                {#                                                <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true"#}
-                {#                                                   class="lightbox mfp-iframe" title="SoundCloud Audio"></a>#}
-                {#                                            </div>#}
-                {##}
-                {#                                            <i class="fa fa-volume-up"></i>#}
-                {#                                            <h4 class="name">SoundCloud Audio</h4>#}
-                {#                                            <span class="category">SoundCloud</span>#}
-                {#                                        </figure>#}
-                {##}
-                {#                                        <figure class="item standard"#}
-                {#                                                data-groups='["category_all", "category_detailed"]'>#}
-                {#                                            <div class="portfolio-item-img">#}
-                {#                                                <img src="img/portfolio/2.jpg" alt="Media Project 2" title=""/>#}
-                {#                                                <a href="portfolio-1.html" class="ajax-page-load"></a>#}
-                {#                                            </div>#}
-                {##}
-                {#                                            <i class="far fa-file-alt"></i>#}
-                {#                                            <h4 class="name">Detailed Project 2</h4>#}
-                {#                                            <span class="category">Detailed</span>#}
-                {#                                        </figure>#}
-                {##}
-                {#                                        <figure class="item lbvideo"#}
-                {#                                                data-groups='["category_all", "category_vimeo-videos"]'>#}
-                {#                                            <div class="portfolio-item-img">#}
-                {#                                                <img src="img/portfolio/3.jpg" alt="Vimeo Video 1" title=""/>#}
-                {#                                                <a href="https://player.vimeo.com/video/158284739"#}
-                {#                                                   class="lightbox mfp-iframe" title="Vimeo Video 1"></a>#}
-                {#                                            </div>#}
-                {##}
-                {#                                            <i class="fas fa-video"></i>#}
-                {#                                            <h4 class="name">Vimeo Video 1</h4>#}
-                {#                                            <span class="category">Vimeo Videos</span>#}
-                {#                                        </figure>#}
-                {##}
-                {#                                        <figure class="item standard"#}
-                {#                                                data-groups='["category_all", "category_detailed"]'>#}
-                {#                                            <div class="portfolio-item-img">#}
-                {#                                                <img src="img/portfolio/4.jpg" alt="Media Project 1" title=""/>#}
-                {#                                                <a href="portfolio-1.html" class="ajax-page-load"></a>#}
-                {#                                            </div>#}
-                {##}
-                {#                                            <i class="far fa-file-alt"></i>#}
-                {#                                            <h4 class="name">Detailed Project 1</h4>#}
-                {#                                            <span class="category">Detailed</span>#}
-                {#                                        </figure>#}
-                {##}
-                {#                                        <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>#}
-                {#                                            <div class="portfolio-item-img">#}
-                {#                                                <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title=""/>#}
-                {#                                                <a class="lightbox" title="Mockup Design 1"#}
-                {#                                                   href="img/portfolio/full/5.jpg"></a>#}
-                {#                                            </div>#}
-                {##}
-                {#                                            <i class="far fa-image"></i>#}
-                {#                                            <h4 class="name">Mockup Design 1</h4>#}
-                {#                                            <span class="category">Mockups</span>#}
-                {#                                        </figure>#}
-                {##}
-                {#                                        <figure class="item lbvideo"#}
-                {#                                                data-groups='["category_all", "category_youtube-videos"]'>#}
-                {#                                            <div class="portfolio-item-img">#}
-                {#                                                <img src="img/portfolio/6.jpg" alt="YouTube Video 1" title=""/>#}
-                {#                                                <a href="https://www.youtube.com/embed/bg0gv2YpIok"#}
-                {#                                                   class="lightbox mfp-iframe" title="YouTube Video 1"></a>#}
-                {#                                            </div>#}
-                {##}
-                {#                                            <i class="fas fa-video"></i>#}
-                {#                                            <h4 class="name">YouTube Video 1</h4>#}
-                {#                                            <span class="category">YouTube Videos</span>#}
-                {#                                        </figure>#}
-                {#                                    </div>#}
-                {#                                </div>#}
-                {#                                <!-- End of Portfolio Content -->#}
-                {#                            </div>#}
-                {#                        </div>#}
-                {#                    </div>#}
-                {#                </section>#}
-                {#                <!-- End of Portfolio Subpage -->#}
-
                 <!-- Blog Subpage -->
                 <section data-id="blog" class="animated-section">
                     <div dir="rtl">
@@ -781,7 +348,6 @@
                             <h2>بلاگ</h2>
                         </div>
                     </div>
-
                     <div class="section-content">
                         <div dir="rtl">
                             <div class="row">
@@ -818,11 +384,8 @@
                             </div>
                         </div>
                     </div>
-
-
                 </section>
                 <!-- End of Blog Subpage -->
-
                 <!-- Contact Subpage -->
                 <section data-id="contact" class="animated-section">
                     <div dir="rtl">
@@ -830,9 +393,7 @@
                             <h2>ارتباط <span>با من</span></h2>
                         </div>
                     </div>
-
                     <div class="section-content">
-
                         <div class="row">
                             <!-- Contact Info -->
                             <div class="col-xs-12 col-sm-4">
@@ -842,32 +403,26 @@
                                     <span class="lm-info-block-value"></span>
                                     <span class="lm-info-block-text"></span>
                                 </div>
-
                                 <div class="lm-info-block gray-default">
                                     <i class="lnr lnr-phone-handset"></i>
                                     <h4>{{ info.phone }}</h4>
                                     <span class="lm-info-block-value"></span>
                                     <span class="lm-info-block-text"></span>
                                 </div>
-
                                 <div class="lm-info-block gray-default">
                                     <i class="lnr lnr-envelope"></i>
                                     <h4>{{ info.email }}</h4>
                                     <span class="lm-info-block-value"></span>
                                     <span class="lm-info-block-text"></span>
                                 </div>
-
                                 <div class="lm-info-block gray-default">
                                     <i class="lnr lnr-checkmark-circle"></i>
                                     <h4>پروژه پذیرفته میشود</h4>
                                     <span class="lm-info-block-value"></span>
                                     <span class="lm-info-block-text"></span>
                                 </div>
-
-
                             </div>
                             <!-- End of Contact Info -->
-
                             <!-- Contact Form -->
                             <div class="col-xs-12 col-sm-8">
                                 <div dir="rtl">
@@ -881,7 +436,6 @@
                                         <h3> چطور میتونم <span>کمکتون کنم؟</span></h3>
                                     </div>
                                 </div>
-
                                 <form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
                                     {% csrf_token %}
                                     <div class="messages"></div>
@@ -890,21 +444,17 @@
                                             <div class="right-column">
                                                 <div class="form-group form-group-with-icon">
                                                     {{ form.fullname }}
-                                                    {#                                                    <label>Full Name</label>#}
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
-
                                                 <div class="form-group form-group-with-icon">
                                                     {{ form.email }}
-                                                    {#                                                    <label>Email Address</label>#}
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
 
                                                 <div class="form-group form-group-with-icon">
                                                     {{ form.subject }}
-                                                    {#                                                    <label>Subject</label>#}
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -912,15 +462,11 @@
                                             <div class="left-column">
                                                 <div class="form-group form-group-with-icon">
                                                     {{ form.message }}
-                                                    {#                                                    <label>Message</label>#}
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        {#                                        <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"#}
-                                        {#                                             data-theme="dark"></div>#}
                                         <div dir="rtl">
                                             <input type="submit" class="button btn-send" value="ارسال پیام">
                                         </div>
@@ -929,30 +475,22 @@
                             </div>
                             <!-- End of Contact Form -->
                         </div>
-
                     </div>
                 </section>
                 <!-- End of Contact Subpage -->
             </div>
         </div>
-
     </div>
 </div>
-
 <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
 <script src="{% static 'js/modernizr.custom.js' %}"></script>
 <script src="{% static 'js/animating.js' %}"></script>
-
 <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-{#<script src='https://www.google.com/recaptcha/api.js'></script>#}
-
 <script src='{% static 'js/perfect-scrollbar.min.js' %}'></script>
 <script src='{% static 'js/jquery.shuffle.min.js' %}'></script>
 <script src='{% static 'js/masonry.pkgd.min.js' %}'></script>
 <script src='{% static 'js/owl.carousel.min.js' %}'></script>
 <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-
-{#<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>#}
 <script src="{% static 'js/jquery.googlemap.js' %}"></script>
 <script src="{% static 'js/validator.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
