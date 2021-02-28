@@ -4,33 +4,64 @@
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sent Successfuly</title>
-
+    <title>با موفقیت ارسال شد</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/animations.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/perfect-scrollbar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
 </head>
-<div class="page">
-    <div class="page-content">
-        <div class="content-area">
-            <div class="animated-sections">
-                <section data-id="home" class="animated-section start-page">
-                    <div class="section-content vcentered">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                <div class="title-block">
-                                    <h2 style="color:green;">پیام شما با موفقیت ارسال شد</h2>
-                                    <a href="{{ sent }}"><h3>اینجا کلیک کنید تا به صفحه‌ی اصلی برگردید</h3></a>
-                                    <div class="owl-carousel text-rotation">
-                                        <div class="item">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End of Home Subpage -->
-            </div>
+<body>
+<div class="lm-animated-bg" style="background-image: url({% static 'img/main_bg.png' %});"></div>
+<!-- /Animated Background -->
+<!-- Loading animation -->
+<div class="preloader">
+    <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
     </div>
 </div>
+<!-- /Loading animation -->
+<div class="page">
+    <div class="page-content">
+        <header id="site_header" class="header mobile-menu-hide">
+        </header>
+        <div class="content-area">
+            <div class="animated-sections">
+                <!-- Home Subpage -->
+                <div>
+                    <div class="section-content vcentered">
+                        <div class="row">
+                            <div class="col-sm-7 col-md-7 col-lg-7">
+                                    <h2 style="color: green">!پیام شما با موفقیت ارسال شد</h2>
+                                    <br>
+                                    <a class="btn btn-primary" href="{{ sent }}"><h3>اینجا کلیک کنید تا به صفحه‌ی اصلی برگردید</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</div>
+<!-- End of Home Subpage -->
+<script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<script src="{% static 'js/animating.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src='{% static 'js/perfect-scrollbar.min.js' %}'></script>
+<script src='{% static 'js/jquery.shuffle.min.js' %}'></script>
+<script src='{% static 'js/masonry.pkgd.min.js' %}'></script>
+<script src='{% static 'js/owl.carousel.min.js' %}'></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.googlemap.js' %}"></script>
+<script src="{% static 'js/validator.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
+
+
